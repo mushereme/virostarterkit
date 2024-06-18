@@ -67,18 +67,7 @@ const Welcome = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" />
-      <View style={styles.content}>
-        <Image
-          style={styles.logo}
-          source={require("./../res/icons/Khanbogd_Logo.png")}
-        />
-        <Animated.Text
-          style={[styles.title, titleStyle, { fontSize: titleFontSize }]}
-        >
-          {"Галбын голын шаргал\nговьд тавтай морилно уу"}
-        </Animated.Text>
-      </View>
-
+     
       <View style={styles.loadingContainer}>
         {buttonLoading && <ActivityIndicator size="large" color="#FFA500" />}
       </View>
@@ -98,7 +87,7 @@ const Welcome = ({ navigation }) => {
               end={{ x: Math.cos(30 * Math.PI / 180), y: Math.sin(30 * Math.PI / 180) }}
               style={styles.gradientBackground}
             >
-              <Text style={styles.buttonText}>Эхлэх</Text>
+              <Text style={styles.buttonText}>Getting started</Text>
             </LinearGradient>
           </TouchableOpacity>
         </Animated.View>

@@ -7,7 +7,6 @@ import {
 } from "@reactvision/react-viro";
 
 export default ARscreen = (props) => {
-    
 
     return (
         <View style={{ flex: 1 }}>

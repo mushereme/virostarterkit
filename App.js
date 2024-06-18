@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Image, View } from "react-native";
 import HomeScreen from "./screens/Home";
+import ServiceScreen from "./screens/Service";
 import Welcome from "./screens/Welcome";
 import ARScreen from "./screens/ARScreen";
 import { enableScreens } from "react-native-screens";
@@ -80,6 +81,26 @@ function Root() {
             </View>
           ),
           unmountOnBlur: true
+        }}
+      />
+      <Tab.Screen
+        name="Service"
+        component={ServiceScreen}
+        options={{
+          title: "Үйлчилгээ",
+          tabBarIcon: ({ size, color, focused }) => (
+            <View style={{ width: 24, height: 24, alignItems: 'center', justifyContent: 'center' }}>
+              <Image
+                source={IntroIcon}
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  resizeMode: 'contain', 
+                  tintColor: focused ? color : '#888' 
+                }}
+              />
+            </View>
+          ),
         }}
       />
     </Tab.Navigator>
