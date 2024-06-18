@@ -35,10 +35,9 @@ const HelloWorldSceneAR = () => {
     modelAnim: false,
     loopState: false,
     animationName: "01",
-    videoUrl: require("../res/greetings-vertical.mp4")
+    videoUrl: require("../res/sq.mp4")
   })
-
-
+  
   const onInitialized = (state, reason) => {
     console.log("onInitialized", state, reason);
     if (state === ViroTrackingStateConstants.TRACKING_NORMAL) {
@@ -79,7 +78,7 @@ const HelloWorldSceneAR = () => {
     console.log("$:/button intro ", value);
     setState({
       ...state,
-      videoUrl: require("../res/greetings-vertical.mp4")
+      videoUrl: require("../res/sq.mp4")
     })
   }
 
