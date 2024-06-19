@@ -8,6 +8,8 @@ import {
 
 export default ARscreen = (props) => {
 
+    console.log("$:/name ", props.route.name)
+
     return (
         <View style={{ flex: 1 }}>
             <ViroARSceneNavigator 

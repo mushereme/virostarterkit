@@ -84,8 +84,8 @@ function Root() {
         }}
       />
       <Tab.Screen
-        name="Service"
-        component={ServiceScreen}
+        name="360"
+        component={ARScreen}
         options={{
           title: "Үйлчилгээ",
           tabBarIcon: ({ size, color, focused }) => (
